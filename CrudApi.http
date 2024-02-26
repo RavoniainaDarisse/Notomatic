@@ -1,0 +1,30 @@
+#Create
+POST http://localhost:5000/api/create HTTP/1.1
+Content-Type:application/json
+
+{
+    "Name":"Vue JS",
+    "Descriptions":"Test props react js"
+}
+
+###
+#find All
+GET http://localhost:5000/api
+
+###
+#find by ID
+GET http://localhost:5000/api/65d88e94fd2e8a0933940e12
+
+###
+#update
+PATCH  http://localhost:5000/api/update/65d786c795d632c1eeb1db91 HTTP/1.1
+Content-Type: application/json
+
+{
+    "Name":"Vue JS",
+    "Descriptions":"Test props react js"
+}
+
+###
+#delete
+DELETE http://localhost:5000/api/delete/65d0e4f68030d1ad72ecb89f HTTP/1.1
